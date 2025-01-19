@@ -23,8 +23,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
-                    android:scheme="learnkmp"
-                    android:host="auth" />
+                    android:scheme="https"
+                    android:host="akjkxwztzusccdpxbxwt.supabase.co"
+                    android:path="/auth/v1/callback"/>
             </intent-filter>
         </activity>
     </application>

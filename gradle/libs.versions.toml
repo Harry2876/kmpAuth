@@ -14,6 +14,7 @@ androidx-test-junit = "1.2.1"
 compose-multiplatform = "1.7.0"
 junit = "4.13.2"
 kotlin = "2.1.0"
+ktor = "3.0.3"
 kotlinx-coroutines = "1.10.1"
 supabaseKt = "0.1.0"
 playServicesAuth = "21.3.0"
@@ -38,6 +39,12 @@ realtime-kt = { module = "io.github.jan-tennert.supabase:realtime-kt" }
 supabase-kt = { module = "io.supabase:supabase-kt", version.ref = "supabaseKt" }
 play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
 androidx-ui-tooling-preview-android = { group = "androidx.compose.ui", name = "ui-tooling-preview-android", version.ref = "uiToolingPreviewAndroid" }
+ktor-client-core = { module= "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { module= "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-darwin = { module= "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-content-negotiation = { module= "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-logging = { module= "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-client-auth = { module= "io.ktor:ktor-client-auth", version.ref = "ktor" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -45,3 +52,11 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+
+[bundles]
+ktor = [
+    "ktor-client-core",
+    "ktor-client-content-negotiation",
+    "ktor-client-logging",
+    "ktor-client-auth"
+]

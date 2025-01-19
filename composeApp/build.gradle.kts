@@ -37,7 +37,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
-            implementation("io.ktor:ktor-client-cio:3.0.3")
+            implementation(libs.ktor.client.okhttp)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -50,18 +50,19 @@ kotlin {
             implementation(project.dependencies.platform("io.github.jan-tennert.supabase:bom:3.0.3"))
             implementation(libs.postgrest.kt)
             implementation("io.github.jan-tennert.supabase:auth-kt:3.0.3")
+            implementation(libs.bundles.ktor)
             implementation(libs.realtime.kt)
+        }
+        nativeMain.dependencies {
+         implementation(libs.ktor.client.darwin)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
-            implementation("io.ktor:ktor-client-cio:3.0.3")
+            implementation(libs.ktor.client.okhttp)
         }
         iosMain.dependencies {
-            implementation("io.ktor:ktor-client-ios:2.0.0")
-            implementation("io.ktor:ktor-client-logging:2.0.0")
-            implementation("io.ktor:ktor-client-content-negotiation:2.0.0")
-            implementation("io.ktor:ktor-client-auth:2.0.0")
+       implementation(libs.bundles.ktor)
         }
     }
 }

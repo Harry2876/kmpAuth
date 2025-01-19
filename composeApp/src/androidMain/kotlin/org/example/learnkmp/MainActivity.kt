@@ -23,14 +23,7 @@ class MainActivity : ComponentActivity() {
         super.onNewIntent(intent)
         SupabaseClientInstance.supabase.handleDeeplinks(intent)
     }
-
-
-
-
-
-
-
-
+    
 
 }
 

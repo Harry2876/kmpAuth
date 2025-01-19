@@ -10,9 +10,6 @@ import platform.UIKit.UIApplicationLaunchOptionsKey
 import platform.UIKit.UIResponder
 import platform.UIKit.UIScreen
 import platform.UIKit.UIWindow
-import io.github.jan.supabase.auth.handleDeeplinks as supabaseHandleDeeplinks
 
-fun MainViewController() = ComposeUIViewController { App()
+fun MainViewController() = ComposeUIViewController { App() }
 
-
-}
