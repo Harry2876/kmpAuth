@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "18728389076",
+    "project_id": "leankmp-d16eb",
+    "storage_bucket": "leankmp-d16eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18728389076:android:c1e9ad12196002a2cf2e41",
+        "android_client_info": {
+          "package_name": "org.example.learnkmp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy7CldhhIHkABVy2m-jaOptmAcp2_DJTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
